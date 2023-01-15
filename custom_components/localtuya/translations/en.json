@@ -35,7 +35,7 @@
             "already_configured": "Device has already been configured.",
             "device_success": "Device {dev_name} successfully {action}.",
             "input_value_error": "Wrong Value {value} in field {field}",
-            "sensor_uid_error": "Sensor {value} already exists. Edit existing or delete it before add."
+            "sensor_uid_error": "Sensor {value} already exists. Edit existing or delete it before add.",
             "no_entities": "Cannot remove all entities from a device.\nIf you want to delete a device, enter it in the Devices menu, click the 3 dots in the 'Device info' frame, and press the Delete button."
         },
         "error": {
