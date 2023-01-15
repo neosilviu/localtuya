@@ -791,7 +791,7 @@ class LocalTuyaOptionsFlowHandler(config_entries.OptionsFlow):
                         return await self.async_step_pick_entity_type()
                     return self.async_create_entry(title="", data={})
             else:
-                                if CONF_BYTES_RANGE in user_input and user_input[CONF_BYTES_RANGE]:
+                if CONF_BYTES_RANGE in user_input and user_input[CONF_BYTES_RANGE]:
                     user_conf_id = int(user_input[CONF_ID].split(" ")[0])
                     for check_entity in self.device_data[CONF_ENTITIES]:
                         if check_entity[CONF_ID] == user_conf_id and check_entity[CONF_BYTES_RANGE] ==  user_input[CONF_BYTES_RANGE]:
