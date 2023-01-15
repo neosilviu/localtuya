@@ -50,6 +50,7 @@ from .const import (
     PLATFORMS,
     CONF_BYTES_RANGE,
     CONF_ADD_ENTITIES,
+    CONF_MANUAL_DPS,
 )
 from .discovery import discover
 
