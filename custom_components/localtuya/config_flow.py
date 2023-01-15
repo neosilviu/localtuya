@@ -767,7 +767,7 @@ class LocalTuyaOptionsFlowHandler(config_entries.OptionsFlow):
         """Manage entity settings."""
         errors = {}
         if user_input is not None:
-            if CONF_BYTES_RANGE in user_input and user_input[CONF_BYTES_RANGE] and not re.match("^[0123456789]:[1234]$", user_input[CONF_BYTES_RANGE]):
+            if CONF_BYTES_RANGE in user_input and user_input[CONF_BYTES_RANGE] and not re.match("^[0123456789]:[123456789]$", user_input[CONF_BYTES_RANGE]):
                 return self.async_abort(
                     reason="input_value_error",
                     description_placeholders={
