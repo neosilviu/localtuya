@@ -67,7 +67,6 @@ class LocaltuyaSensor(LocalTuyaEntity):
 
     def status_updated(self):
         """Device status was updated."""
-        super().status_updated()
         state = self.dps(self._dp_id)
         if state is None: 
            self._state = state
